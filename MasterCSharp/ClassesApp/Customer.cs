@@ -13,6 +13,8 @@ namespace ClassesApp
         // Backing field for write-only property
         private string _password;
 
+        // Compile time
+        public const int numberOfSomething = 4;
 
 
         // Read-only property
