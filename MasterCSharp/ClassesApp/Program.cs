@@ -4,10 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Car audi = new Car("A3", "Audi", false);
-            Car bmw = new Car("i7", "BMW", true);
-
-            // Console.WriteLine(("bmw.Model: " +  bmw.Model));
+            Customer earl = new Customer("Earl");
+            Customer frankTheTank = new Customer("FrankTheTank", "1 Mainstreet", "555-555-5555");
+            Console.WriteLine($"Name of customer is {earl.Name}");
+            Console.WriteLine($"Name of customer is {frankTheTank.Name}, address is {frankTheTank.Address}, and phone is {frankTheTank.ContactNumber}");
         }
     }
 }
