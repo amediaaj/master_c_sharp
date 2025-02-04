@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{AB59DE81-A542-4DCE-804F-2D3B2BCEF237}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesApp", "ClassesApp\ClassesApp.csproj", "{0583639B-32F0-44F7-AF11-0CBFE57C1D0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListsApp", "ListsApp\ListsApp.csproj", "{AF7BA198-4C13-4719-984F-716C98E68AAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0583639B-32F0-44F7-AF11-0CBFE57C1D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0583639B-32F0-44F7-AF11-0CBFE57C1D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0583639B-32F0-44F7-AF11-0CBFE57C1D0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF7BA198-4C13-4719-984F-716C98E68AAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF7BA198-4C13-4719-984F-716C98E68AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF7BA198-4C13-4719-984F-716C98E68AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF7BA198-4C13-4719-984F-716C98E68AAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
