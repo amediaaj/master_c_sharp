@@ -7,13 +7,16 @@
             Car myAudi = new Car("A3", "Audi", false);
             myAudi.Drive();
 
-            Customer myCustomer = new Customer();
-            // Calling SetDetails with default param
-            myCustomer.SetDetails("Alex", "1 Main Street");
-            Console.WriteLine($"Name is {myCustomer.Name} and Phone is {myCustomer.ContactNumber}");
+            Customer customer1 = new Customer();
+            customer1.GetDetails();
 
-            // Named params
-            //Console.WriteLine(AddNum(2, firstNum: 25);
+            Customer customer2 = new Customer();
+            customer2.GetDetails();
+
+            // Read-only
+            Console.WriteLine($"customer1 Id: {customer1.Id}");
+            // Write-only
+            customer1.Password = "password";
         }
     }
 }
