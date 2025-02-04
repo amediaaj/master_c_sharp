@@ -1,4 +1,7 @@
 ﻿
+using System.ComponentModel;
+using System.Reflection;
+
 namespace ClassesApp
 {
     internal class Customer
@@ -26,6 +29,13 @@ namespace ClassesApp
         public Customer(string name) 
         { 
             Name = name;
+        }
+
+        public void SetDetails(string name, string address, string contactNumber = "NA")
+        {
+            Name = name;
+            Address = address;
+            ContactNumber = contactNumber;
         }
     }
 }

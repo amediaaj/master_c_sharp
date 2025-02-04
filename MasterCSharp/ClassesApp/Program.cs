@@ -4,16 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Customer earl = new Customer("Earl");
-            Customer frankTheTank = new Customer("FrankTheTank", "1 Mainstreet", "555-555-5555");
-            Console.WriteLine($"Name of customer is {earl.Name}");
-            Console.WriteLine($"Name of customer is {frankTheTank.Name}, address is {frankTheTank.Address}, and phone is {frankTheTank.ContactNumber}");
+            Car myAudi = new Car("A3", "Audi", false);
+            myAudi.Drive();
 
             Customer myCustomer = new Customer();
-            Console.WriteLine("Details about customer: " + myCustomer.Name);
-            Console.Write("Please enter the customer's name: ");
-            myCustomer.Name =  Console.ReadLine();
-            Console.WriteLine("Details about customer: " + myCustomer.Name);
+            // Calling SetDetails with default param
+            myCustomer.SetDetails("Alex", "1 Main Street");
+            Console.WriteLine($"Name is {myCustomer.Name} and Phone is {myCustomer.ContactNumber}");
+
+            // Named params
+            //Console.WriteLine(AddNum(2, firstNum: 25);
         }
     }
 }
