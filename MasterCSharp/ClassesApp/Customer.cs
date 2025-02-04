@@ -7,6 +7,14 @@ namespace ClassesApp
         public string Address { get; set; }
         public string ContactNumber { get; set; }
 
+        // Default Constructor
+        public Customer()
+        {
+            Name = "New Customer";
+            Address = "Unknown";
+            ContactNumber = "None";
+        }
+
         // Custom Constructor
         public Customer(string name, string address, string contactNumber)
         {
