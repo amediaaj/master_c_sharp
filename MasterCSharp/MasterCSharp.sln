@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesApp", "ClassesApp\Cl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListsApp", "ListsApp\ListsApp.csproj", "{AF7BA198-4C13-4719-984F-716C98E68AAB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hashtables", "Hashtables\Hashtables.csproj", "{B17E4E71-1A08-4A31-8204-8D7C7C496B04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{AF7BA198-4C13-4719-984F-716C98E68AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF7BA198-4C13-4719-984F-716C98E68AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF7BA198-4C13-4719-984F-716C98E68AAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B17E4E71-1A08-4A31-8204-8D7C7C496B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B17E4E71-1A08-4A31-8204-8D7C7C496B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B17E4E71-1A08-4A31-8204-8D7C7C496B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B17E4E71-1A08-4A31-8204-8D7C7C496B04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
