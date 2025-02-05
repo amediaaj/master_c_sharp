@@ -28,7 +28,7 @@ namespace ListsApp
             }
 
             // Returns IEnumerable so we convert to List
-            // Where() is from 
+            // Where() is from partial class Enumerable
             List<Product> cheapProducts = products.Where(p => p.Price < 1.0).ToList();
         }
     }
