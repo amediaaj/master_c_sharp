@@ -6,33 +6,16 @@ namespace Dictionaries
     {
         static void Main(string[] args)
         {
-            // key - value
-            // Declaring and initializing a Dictionary
-            Dictionary<int, Employee> employees = new Dictionary<int, Employee>();
-
-            employees.Add(1, new Employee("John Does", 35, 100000));
-            employees.Add(2, new Employee("John Doesnt", 25, 200000));
-            employees.Add(3, new Employee("John Wasnt", 45, 80000));
-            employees.Add(4, new Employee("John Will", 15, 50000));
-
-            foreach(var item in employees)
+            var codes = new Dictionary<string, string>
             {
-                Console.WriteLine($"{item.Key}: {item.Value.Name}");
+                ["NY"] = "New York",
+                ["CA"] = "California",
+                ["TX"] = "Texas"
+            };
+
+            if (codes.TryGetValue("NY", out string state)) {
+                Console.WriteLine(state);
             }
-        }
-    }
-
-    class Employee
-    {
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public int Salary { get; set; }
-
-        public Employee(string name, int age, int salary)
-        {
-            Name = name;
-            Age = age;
-            Salary = salary;
         }
     }
 }
