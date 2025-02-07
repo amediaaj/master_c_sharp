@@ -23,7 +23,8 @@ namespace TryCatch
                 Console.WriteLine("Error: " + ex.Message);
             }
             finally {
-                
+                // Useful for cleaning up, i.e. database connections, file streams, etc.
+                Console.WriteLine("This alwasy executes");
             }
 
             Console.WriteLine("Result: " + result);
