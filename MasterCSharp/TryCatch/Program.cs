@@ -1,4 +1,5 @@
 ﻿using System.Collections.Concurrent;
+using System.Diagnostics;
 
 namespace TryCatch
 {
@@ -8,6 +9,8 @@ namespace TryCatch
         {
 
             int result = 0;
+
+            Debug.WriteLine("A message hidden from the user");
 
             try
             {
@@ -21,6 +24,8 @@ namespace TryCatch
             {
                 // Console.WriteLine(ex.ToString());
                 Console.WriteLine("Error: " + ex.Message);
+                // Message hidden from user
+                Debug.WriteLine(ex.ToString());
             }
             finally {
                 // Useful for cleaning up, i.e. database connections, file streams, etc.
