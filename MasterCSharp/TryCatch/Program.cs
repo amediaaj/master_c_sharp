@@ -7,32 +7,15 @@ namespace TryCatch
     {
         static void Main(string[] args)
         {
-
-            int result = 0;
-
-            Debug.WriteLine("A message hidden from the user");
-
             try
             {
-                int num1, num2;
-                Console.Write("Please enter a number: ");
-                num1 = int.Parse(Console.ReadLine());
-                num2 = 10;
-                result = num2 / num1;
+                double result = ThrowDemo.Divide(1, 0);
+                Console.WriteLine(result);
             }
-            catch (Exception ex)
+            catch (DivideByZeroException e)
             {
-                // Console.WriteLine(ex.ToString());
-                Console.WriteLine("Error: " + ex.Message);
-                // Message hidden from user
-                Debug.WriteLine(ex.ToString());
+                Console.WriteLine("An error occured: " + e.Message);
             }
-            finally {
-                // Useful for cleaning up, i.e. database connections, file streams, etc.
-                Console.WriteLine("This alwasy executes");
-            }
-
-            Console.WriteLine("Result: " + result);
-        }
+         }
     }
 }
